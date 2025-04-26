@@ -21,6 +21,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
+            cd /var/www/mirtraveler_frontend
             docker stop mt || true
             docker rm mt || true
-            docker run -d --name mt -p 3000:3000 mt:latest
+            docker run -d --name mt -p 3009:3000 mt:latest
