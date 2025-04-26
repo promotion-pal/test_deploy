@@ -20,8 +20,6 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          passphrase: ${{ secrets.SSH_PASSPHRASE }}
-          key_type: ed25519
           script: |
             cd /var/www/mirtraveler_frontend
             docker stop mt || true
