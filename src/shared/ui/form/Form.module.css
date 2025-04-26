@@ -1,0 +1,23 @@
+.message {
+  @apply text-sm text-red-600;
+}
+
+.description {
+  @apply text-sm text-gray;
+}
+
+.item {
+  @apply space-y-1;
+}
+
+.inlineItem {
+  @apply flex items-center space-x-2;
+}
+
+.success {
+  @apply mb-3 rounded-md bg-green-600/10 px-4 py-3 text-sm font-medium text-green-600;
+}
+
+.error {
+  @apply rounded-md bg-red-500/10 px-4 py-3 text-sm font-semibold text-red-500;
+}

@@ -1,0 +1,23 @@
+.amenities {
+  margin-top: 35px;
+}
+
+.title {
+  font-weight: var(--fw-bold);
+  font-size: 23px;
+  line-height: 130%;
+}
+.boxBlock {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+  border-bottom: 1px solid rgb(179, 179, 179);
+  padding-bottom: 35px;
+}
+.prmisions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}

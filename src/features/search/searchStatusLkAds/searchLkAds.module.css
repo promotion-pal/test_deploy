@@ -1,0 +1,6 @@
+.filters {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 10px 40px;
+}

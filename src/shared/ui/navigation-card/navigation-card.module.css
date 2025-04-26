@@ -1,0 +1,15 @@
+.wrapper {
+  @apply relative grid w-full grid-cols-2 md:mt-0 mt-10 rounded-lg px-5 py-14 md:max-w-md h-[360px] lg:max-w-lg;
+}
+
+.colorHouseRent {
+  @apply bg-primary;
+}
+
+.colorCarRent {
+  @apply bg-primary;
+}
+
+.colorTours {
+  @apply bg-gradient-to-tr from-[#03A0D9] to-[#68DFF2];
+}

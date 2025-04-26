@@ -1,0 +1,17 @@
+.approved,
+.expectation {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: var(--fw-bold);
+}
+.approved {
+  color: var(--clr-primary);
+}
+.expectation {
+  border-radius: 80px;
+  background-color: #f3f3f3;
+  padding: 0 12px;
+  width: fit-content;
+  height: 40px;
+}

@@ -1,0 +1,11 @@
+.fadeRight {
+  @apply absolute inset-y-0 right-0 hidden w-48 bg-gradient-to-l from-white to-transparent sm:block;
+}
+
+.fadeLeft {
+  @apply absolute inset-y-0 left-0 hidden bg-gradient-to-r from-white to-transparent sm:block sm:w-48;
+}
+
+.trigger {
+  @apply bg-gray/70 md:bg-gray-dark/70 absolute z-10 size-8 md:size-12;
+}

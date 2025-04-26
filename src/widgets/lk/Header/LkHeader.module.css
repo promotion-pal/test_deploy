@@ -1,0 +1,15 @@
+.header {
+  @apply sticky top-0 z-50 h-[70px] bg-white shadow-sm rounded-b-2xl md:rounded-none;
+}
+
+.container {
+  @apply mx-auto flex h-full max-w-[1500px] items-center justify-between px-6;
+}
+
+.link {
+  @apply relative flex h-[70px] items-center px-4 font-medium;
+}
+
+.activeLink {
+  @apply after:absolute after:bottom-[-1px] after:left-0 after:h-0.5 after:w-full after:bg-primary after:content-[''];
+}

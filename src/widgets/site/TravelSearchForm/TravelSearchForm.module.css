@@ -1,0 +1,31 @@
+.container {
+  @apply relative flex flex-col items-center text-white bg-gray-light/40 backdrop-blur-lg rounded-lg md:flex-row md:rounded-full;
+}
+
+.section {
+  @apply relative flex-grow pl-6 pr-8;
+}
+
+.section:not(:first-child, :last-child) {
+  @apply border-b border-white/50 md:border-b-0 md:border-l;
+}
+
+.title {
+  @apply text-lg font-medium py-4;
+}
+
+.input {
+  @apply w-full text-lg bg-transparent pb-2 pt-6;
+}
+
+.label {
+  @apply absolute text-lg font-medium text-white/60 duration-300 transform -translate-y-4 scale-75 top-4 origin-[0] left-6;
+}
+
+.iconGroup {
+  @apply absolute inset-y-0 right-2 flex items-center gap-2;
+}
+
+.iconGroup svg {
+  @apply size-5;
+}

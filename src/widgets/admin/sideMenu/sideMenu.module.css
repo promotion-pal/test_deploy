@@ -1,0 +1,22 @@
+.sideMenu {
+  border-radius: 16px;
+  background-color: white;
+}
+.title {
+  margin-top: 15px;
+  padding-left: clamp(0.625rem, 0.5rem + 0.63vw, 1.25rem);
+  min-height: clamp(1.5rem, -0.125rem + 2.71vw, 3.125rem);
+  color: var(--clr-mediumgrey);
+  font-size: 14px;
+}
+.moder > *:nth-child(5) {
+  margin-top: clamp(0.625rem, -5rem + 9.38vw, 6.25rem);
+}
+.desktopHidden {
+  margin-bottom: 15px;
+}
+@media (width>768) {
+  .desktopHidden {
+    display: none;
+  }
+}

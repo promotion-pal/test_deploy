@@ -1,0 +1,8 @@
+.searchForm {
+  display: flex;
+  align-items: end;
+  border-bottom: 1px solid var(--clr-darkgrey);
+}
+.searchIkon {
+  color: var(--clr-mediumgrey);
+}

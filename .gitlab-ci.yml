@@ -1,0 +1,19 @@
+image: 'node:20'
+
+stages:
+  - test
+
+cache:
+  paths:
+    - node_modules/
+
+.before_script_template:
+  before_script:
+    - npm i -g pnpm
+    - pnpm i
+
+test_lint:
+  extends: .before_script_template
+  stage: test
+  script:
+    - npm run lint

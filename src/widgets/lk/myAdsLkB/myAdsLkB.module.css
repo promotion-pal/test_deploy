@@ -1,0 +1,107 @@
+.myAdsLkB {
+  margin-top: 20px;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 25px clamp(1.25rem, 0.938rem + 1.56vw, 1.875rem);
+  max-width: 100%;
+}
+.title {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-lk_title);
+  line-height: 130%;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: clamp(1.25rem, 0.75rem + 2.5vw, 3.75rem);
+  margin-top: 36px;
+}
+.sort {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+  margin-top: 10px;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 25px 0;
+  max-width: 100%;
+}
+.card:hover,
+.card:hover .cardHeader > button {
+  background-color: #f7fcf5;
+}
+.carContent {
+  margin-left: 0;
+}
+.carItem {
+  flex-basis: 100%;
+  padding-left: 0;
+}
+.img {
+  display: block;
+  border-radius: 1rem;
+  aspect-ratio: 1/1;
+  max-width: 100%;
+  object-fit: cover;
+}
+.cardHeader,
+.price {
+  font-weight: var(--fw-bold);
+  line-height: 110%;
+}
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--clr-teal);
+  font-size: clamp(1.063rem, 0.988rem + 0.38vw, 1.438rem);
+}
+
+.price {
+  margin-top: 10px;
+  font-size: 23px;
+}
+.lebels {
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.likeblock,
+.feedbackblock,
+.lebels {
+  display: flex;
+  gap: 10px;
+}
+.cardAddress {
+  margin-top: 10px;
+  color: var(--clr-mediumgrey);
+  font-weight: var(--fw-bold);
+  font-size: 15px;
+  line-height: 100%;
+}
+.cardText {
+  margin-top: 10px;
+  color: var(--clr-mediumgrey);
+  font-weight: var(--fw-thin);
+  font-size: 14px;
+  line-height: 130%;
+}
+@media (width > 540px) {
+  .cardInfo {
+    grid-column: 2/6;
+    margin-left: 20px;
+  }
+}
+@media (max-width: 540px) {
+  .cardHeader {
+    margin-top: 20px;
+    color: var(--clr-darkgrey);
+    font-weight: var(--fw-thin);
+  }
+}

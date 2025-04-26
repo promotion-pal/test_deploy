@@ -1,0 +1,41 @@
+.notApprove {
+  margin-top: 20px;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 25px 20px;
+  max-width: 100%;
+}
+.title {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-lk_title);
+  line-height: 130%;
+}
+.notApprove > p {
+  margin-top: 10px;
+  font-weight: var(--fw-regular);
+  font-size: 17px;
+  line-height: 140%;
+}
+.notApprove > p:first-of-type {
+  margin-top: 15px;
+}
+.linktoads {
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 40px;
+}
+.buttons > button:active {
+  transform: scale(0.95);
+}
+.button1 {
+  background-color: #e7f7f7;
+}
+.button3 {
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+}

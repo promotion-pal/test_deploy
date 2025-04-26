@@ -1,0 +1,38 @@
+.admin {
+  display: grid;
+  grid-template-rows: 4.875rem auto;
+  grid-template-columns: 1fr 4fr;
+  grid-template-areas:
+    'header header'
+    'sidemenu content';
+  gap: 9px;
+  background-color: #f6f7f8;
+  min-height: 100vh;
+}
+.header {
+  grid-area: header;
+}
+.admin_content {
+  grid-area: content;
+}
+.sidebar {
+  grid-area: sidemenu;
+}
+@media (width<769) {
+  .admin {
+    grid-template-rows: 40px auto;
+    grid-template-areas:
+      'header header'
+      'content content';
+  }
+  .sidebar {
+    position: fixed;
+    top: 45px;
+    transform: translateX(-100%);
+    z-index: 5;
+    transition: transform 0.3s ease-in-out;
+  }
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}

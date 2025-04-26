@@ -1,0 +1,15 @@
+.mainInAd {
+  display: grid;
+  gap: 15px;
+  margin-top: 15px;
+}
+.addressBlock {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+}
+.dropdown {
+  position: relative;
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 0.5rem;
+}

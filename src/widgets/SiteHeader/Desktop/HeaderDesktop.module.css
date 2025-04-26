@@ -1,0 +1,16 @@
+.topSection,
+.bottomSection {
+  @apply flex items-center justify-between gap-2;
+}
+
+.topSection {
+  @apply pb-1.5;
+}
+
+.bottomSection {
+  @apply pb-1 pt-3;
+}
+
+.socials {
+  @apply flex items-center gap-2;
+}

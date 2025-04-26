@@ -1,0 +1,64 @@
+.adminHeader {
+  display: flex;
+  gap: 10px;
+  background-color: #f6f7f8;
+  height: 100%;
+}
+.titleblock,
+.icons,
+.searchForm,
+.personal {
+  border-radius: 16px;
+  background-color: white;
+  padding: 0 clamp(0.313rem, -0.256rem + 2.84vw, 1.875rem);
+}
+.titleblock,
+.personal {
+  display: grid;
+  align-content: center;
+}
+.title {
+  background: linear-gradient(
+    90deg,
+    rgba(34, 184, 19, 1) 0%,
+    rgba(87, 160, 220, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-600);
+  line-height: 77%;
+  text-align: center;
+}
+.icons,
+.searchForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.searchForm {
+  flex: 1;
+}
+
+.time {
+  padding-left: 1rem;
+  color: var(--clr-mediumgrey);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+@media (width<769) {
+  .mobileHidden {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+}

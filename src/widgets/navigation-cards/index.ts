@@ -1,0 +1,1 @@
+export { WrapperNavigatioCard } from './wrapper';

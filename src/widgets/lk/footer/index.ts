@@ -1,0 +1,1 @@
+export { FooterLk } from './footer';

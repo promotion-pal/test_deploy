@@ -1,0 +1,40 @@
+.addImages {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  border-radius: 80px;
+  background-color: #07ada71a;
+  padding: 19px 28px;
+  max-width: 320px;
+}
+.container {
+  margin-top: 15px;
+  border-bottom: 1px solid rgb(179 179 179);
+  padding-bottom: 40px;
+}
+.previewsContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.previews {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+.previewImg {
+  position: relative;
+}
+.previewImg > img {
+  border-radius: 8px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.deleteIcon {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  cursor: pointer;
+}

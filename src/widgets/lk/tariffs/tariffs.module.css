@@ -1,0 +1,81 @@
+.tariffs {
+  margin-top: 20px;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 25px 20px;
+  max-width: 100%;
+}
+.title {
+  font-weight: var(--fw-bold);
+  font-size: 26px;
+  line-height: 130%;
+}
+.wrapper {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 15px;
+}
+.easybloc {
+  border: 1px solid #000000;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 370px;
+}
+.easytitle {
+  display: flex;
+  justify-content: space-between;
+  font-weight: var(--fw-bold);
+  font-size: 1.5rem;
+  line-height: 110%;
+}
+.easytext {
+  margin-top: 7px;
+  line-height: 140%;
+}
+.buttoneasy {
+  margin-top: 20px;
+}
+.cards,
+.cards2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 26px;
+}
+.cards2 {
+  gap: 70px 10px;
+  margin-top: 90px;
+}
+.container {
+  position: relative;
+}
+.container > img {
+  display: block;
+  position: absolute;
+  z-index: 2;
+}
+.img163 {
+  top: -60px;
+  right: 50px;
+}
+.img168 {
+  top: -78px;
+  right: -25px;
+}
+.img167 {
+  top: -75px;
+  right: 50px;
+}
+.img166 {
+  top: -72px;
+  right: -25px;
+}
+@media (width<805px) {
+  .cards,
+  .cards2,
+  .wrapper {
+    justify-content: center;
+  }
+}

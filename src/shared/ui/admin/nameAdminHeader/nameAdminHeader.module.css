@@ -1,0 +1,12 @@
+.pers__up {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.circle {
+  border-radius: 100%;
+  background-color: var(--clr-primary);
+  width: 11px;
+  height: 11px;
+}

@@ -1,0 +1,24 @@
+.header {
+  @apply fixed inset-x-0 top-0 z-30 py-3.5 text-white bg-gray-dark/20 px-4;
+}
+
+.headerRight,
+.headerLeft {
+  @apply absolute inset-y-0 flex items-center gap-4 [&_svg]:size-5 [&_svg]:cursor-pointer;
+}
+
+.headerRight {
+  @apply right-4;
+}
+
+.headerLeft {
+  @apply left-4;
+}
+
+.menu {
+  @apply fixed inset-0 bg-gray-dark z-20 pt-24 px-5;
+}
+
+.menuSocials {
+  @apply flex gap-2 justify-center w-full mt-6 text-white [&_svg]:size-10;
+}

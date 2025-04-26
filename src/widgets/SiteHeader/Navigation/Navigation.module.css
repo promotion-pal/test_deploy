@@ -1,0 +1,16 @@
+.link {
+  @apply flex items-center gap-1.5 font-medium transition hover:text-teal;
+}
+
+.link > svg {
+  @apply size-4 stroke-gray transition;
+}
+
+.activeLink > svg,
+.link:hover > svg {
+  @apply stroke-teal;
+}
+
+.activeLink {
+  @apply underline underline-offset-4 text-teal;
+}

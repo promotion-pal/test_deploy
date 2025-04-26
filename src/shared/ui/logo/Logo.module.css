@@ -1,0 +1,11 @@
+.logoText {
+  @apply text-xl text-center font-semibold;
+  background: linear-gradient(
+    90deg,
+    rgba(34, 184, 19, 1) 0%,
+    rgba(87, 160, 220, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  line-height: 75%;
+}

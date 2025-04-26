@@ -1,0 +1,11 @@
+.rentType {
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 0.5rem;
+}
+.warning {
+  width: 100%;
+}
+
+.warning:focus::placeholder {
+  color: red;
+}

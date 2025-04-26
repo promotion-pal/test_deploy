@@ -1,0 +1,31 @@
+.textBase {
+  @apply text-white md:text-gray-dark;
+}
+
+.contentList {
+  @apply flex flex-col gap-2;
+}
+
+.title {
+  @apply text-lg font-semibold text-primary;
+}
+
+@media (max-width: 960px) {
+  .footerMobile {
+    display: flex;
+  }
+
+  .footerDesktop {
+    display: none;
+  }
+}
+
+@media (min-width: 961px) {
+  .footerMobile {
+    display: none;
+  }
+
+  .footerDesktop {
+    display: flex;
+  }
+}

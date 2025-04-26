@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* colors */
+  --clr-primary: #5dd241;
+  --clr-cyan: #005d6e;
+  --clr-teal: #07ada7;
+  --clr-blue: #68dff2;
+  --clr-darkgrey: #353535;
+
+  --clr-mediumgrey: #8f8f8f;
+  --clr-lightgrey: #f3f3f3;
+  --clr-yellow: #ffbf20;
+
+  /* font weights */
+  --fw-thin: 400;
+  --fw-regular: 500;
+  --fw-bold: 600;
+  --fw-black: 700;
+
+  /* font sizes */
+  --fs-200: 0.625rem;
+  /*10px*/
+  --fs-300: 0.875rem;
+  /*14px*/
+  --fs-400: 1rem;
+  /*16px*/
+  --fs-500: 1.125rem;
+  /*18px*/
+  --fs-600: 1.25rem;
+  /*20px*/
+  --fs-700: 1.5rem;
+  /*24px*/
+  --fs-800: 2rem;
+  /*32px*/
+  --fs-900: 3.75rem;
+  /*60px*/
+  /* 26px */
+  --fs-lk_title: 1.625rem;
+  /* 17px */
+  --fs-lk_subtitle: 1.0625rem;
+}
+
+* {
+  margin: 0;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-none;
+  }
+
+  body {
+    @apply bg-white text-gray-dark h-[100vh];
+  }
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.image-overlay-gradient {
+  opacity: 0.6;
+  background: linear-gradient(190deg, transparent 7%, var(--clr-cyan) 100%);
+}
+
+.leaflet-map {
+  height: 720px;
+  width: 100%;
+  z-index: 0;
+  border-radius: 16px;
+}
+
+.leaflet-bottom.leaflet-right {
+  display: none;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.leaflet-baloon-wrapper {
+  background: transparent;
+  overflow: visible;
+}
+
+.leaflet-baloon {
+  position: absolute;
+  background-color: #FFF;
+  border: 2px solid #B3B3B3;
+  border-radius: 20px;
+  bottom: 5px;
+  transform: translateX(-50%);
+  font-size: 20px;
+  line-height: 1;
+  padding: 8px 12px;
+  box-shadow: 0 2px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+.leaflet-baloon::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: calc(50% - 4px);
+  width: 8px;
+  height: 8px;
+  transform: rotate(45deg);
+  background-color: #FFF;
+}

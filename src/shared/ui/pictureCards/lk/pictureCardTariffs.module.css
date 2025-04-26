@@ -1,0 +1,31 @@
+.imgPrew {
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  max-width: 425px;
+}
+.imgPrewContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  border-radius: 11px;
+  background-color: white;
+  padding: 5px;
+  height: 100%;
+}
+.imgPrewRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 103px;
+}
+.imgPrewRightSet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.imgPrewInfo {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 130%;
+}

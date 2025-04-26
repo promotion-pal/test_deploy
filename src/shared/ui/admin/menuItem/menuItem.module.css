@@ -1,0 +1,20 @@
+.menuItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: clamp(0.625rem, 0.5rem + 0.63vw, 1.25rem);
+  padding-left: clamp(0.625rem, 0.5rem + 0.63vw, 1.25rem);
+  min-height: clamp(1.5rem, -0.125rem + 2.71vw, 3.125rem);
+  font-size: 14px;
+}
+
+.menuItem[datatype='active'] {
+  border-left: 4px solid var(--clr-primary);
+  color: var(--clr-primary);
+}
+.button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 25px;
+}

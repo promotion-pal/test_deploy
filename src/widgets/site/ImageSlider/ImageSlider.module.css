@@ -1,0 +1,32 @@
+.content {
+  @apply absolute inset-0 px-6 py-10 text-white w-full flex items-end;
+  @apply md:px-12 lg:px-20;
+}
+
+.imageWrapper {
+  @apply relative h-[425px];
+  @apply lg:h-[500px];
+}
+
+.imageOverlay {
+  @apply absolute inset-0;
+}
+
+.image {
+  @apply object-cover object-center;
+}
+
+.image,
+.imageOverlay {
+  @apply rounded-2xl md:rounded-3xl lg:rounded-[2rem];
+}
+
+.title {
+  @apply mb-2 text-2xl font-semibold;
+  @apply lg:text-3xl;
+}
+
+.description {
+  @apply mb-6 text-base;
+  @apply md:text-lg lg:mb-8;
+}

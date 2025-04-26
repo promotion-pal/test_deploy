@@ -1,0 +1,53 @@
+.myDataLkFL {
+  margin-top: 20px;
+  border-radius: 1rem;
+  background-color: white;
+  padding: 25px clamp(1.25rem, 0.938rem + 1.56vw, 1.875rem);
+  max-width: 100%;
+}
+.title,
+.total,
+.subtitle {
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-lk_title);
+  line-height: 130%;
+}
+.personal_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+.name {
+  color: var(--clr-mediumgrey);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-lk_subtitle);
+  line-height: 130%;
+}
+.subtitle {
+  font-size: 23px;
+}
+.change {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 1rem;
+}
+.pen {
+  display: none;
+  color: var(--clr-darkgrey);
+}
+.text_edit {
+  text-underline-offset: 4px;
+}
+.text_edit:hover {
+  text-decoration: underline;
+}
+@media (max-width: 960px) {
+  .pen {
+    display: inline;
+  }
+  .text_edit {
+    display: none;
+  }
+}

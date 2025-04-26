@@ -1,0 +1,28 @@
+.banner {
+  @apply relative text-white w-full;
+}
+
+.imageWrapper {
+  @apply absolute inset-0 -z-10;
+}
+
+.image {
+  @apply object-cover object-center rounded-b-[2rem];
+}
+
+.imageOverlay {
+  @apply absolute inset-0 rounded-b-[2rem];
+}
+
+.content {
+  @apply max-w-[70%];
+}
+
+.title {
+  @apply text-4xl font-semibold;
+  @apply md:text-5xl xl:text-6xl;
+}
+
+.description {
+  @apply text-lg mt-4;
+}

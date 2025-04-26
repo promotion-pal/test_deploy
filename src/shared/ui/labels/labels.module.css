@@ -1,0 +1,25 @@
+.likeLabel,
+.feedback {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  border-radius: 8px;
+  padding: 5px;
+  width: fit-content;
+  color: white;
+  font-weight: var(--fw-bold);
+  font-size: 15px;
+  line-height: 100%;
+}
+.feedback {
+  color: var(--clr-mediumgrey);
+}
+.feedback > svg {
+  width: 15px;
+  height: 15px;
+  stroke-width: 1.5px;
+}
+.likeLabel > svg {
+  stroke-width: 1.5px;
+}
