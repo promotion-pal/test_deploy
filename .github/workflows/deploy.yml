@@ -1,11 +1,34 @@
-name: Deploy to Server
+# name: Deploy to Server
 
-on:
-  push:
-    branches: [main]
+# on:
+#   push:
+#     branches: [main]
+
+# jobs:
+#   deploy:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4
+
+#       - name: Build Docker image
+#         run: docker build -t mt:latest .
+
+#       - name: Deploy via SSH (разбор)
+#         uses: appleboy/ssh-action@master
+#         with:
+#           host: ${{ secrets.SSH_HOST }}
+#           username: ${{ secrets.SSH_USERNAME }}
+#           key: ${{ secrets.SSH_PRIVATE_KEY }}
+#           script: |
+#             cd /var/www/mirtraveler_frontend
+#             docker run -d --name mt -p 3009:3000 mt:latest
+
+name: Deploy
+on: [push]
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -14,12 +37,27 @@ jobs:
       - name: Build Docker image
         run: docker build -t mt:latest .
 
-      - name: Deploy via SSH (разбор)
+      - name: Save Docker image
+        run: docker save -o mt.tar mt:latest
+
+      - name: Upload image to server
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: 'mt.tar'
+          target: '/tmp/'
+
+      - name: Deploy on server
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /var/www/mirtraveler_frontend
-            docker run -d --name mt -p 3009:3000 mt:latest
+            docker load -i /tmp/mt.tar
+            docker stop mt || true
+            docker rm mt || true
+            docker run -d --name mt -p 3000:3000 mt:latest
+            rm /tmp/mt.tar
